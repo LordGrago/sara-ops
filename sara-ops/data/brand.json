@@ -1,0 +1,182 @@
+{
+  "essence": "Ясность через искусство (Clarity through art). Sara gives people clarity — in understanding, in choice, in their relationship to art.",
+
+  "tagline": "Искусство без страха и снобизма",
+
+  "tagline_alternatives": [
+    "Помогаю видеть, понимать и выбирать осознанно",
+    "Проводник в мире искусства",
+    "Расшифровываю коды искусства простым языком"
+  ],
+
+  "archetype": "Мудрец-Проводник (Sage-Guide). Guide between worlds, not academic professor. Decrypts codes, doesn't lecture. Leads through the art world the way a local leads through a foreign city — with context, stories, and insider knowledge.",
+
+  "central_thesis": "Sara's product = tension relief → transformation. The client comes not for information or artist lists but because they are stressed — from uncertainty, fear of mistakes, choice chaos. Sara moves them from 'I don't understand this world' to 'I move freely in it.' This is not consultation. It is a change in life perception.",
+
+  "key_quote": "Красота — это форма сознания.",
+
+  "positioning": {
+    "statement": "Art consultant and guide in the contemporary art world.",
+    "for": "Those who want to navigate art confidently and consciously — from taste formation to investment decisions.",
+    "through": "Context decryption, code explanation, personal accompaniment.",
+    "unlike": "Academic experts and gallery snobs — speaks human language, not institutional."
+  },
+
+  "kulturolog_framing": "Sara is a культуролог (cultural scholar), not an art consultant in the commercial sense. This distinction elevates the offering from consulting to worldview transmission. Always prefer this framing when describing her work.",
+
+  "client_archetypes": [
+    {
+      "id": "entrepreneurs",
+      "name": "Entrepreneurs",
+      "description": "Making first art purchases. Fear of mistakes. Need for guidance without condescension.",
+      "core_tension": "Want to participate in this world but afraid of looking ignorant"
+    },
+    {
+      "id": "families",
+      "name": "Legacy families",
+      "description": "Building collections across generations. Meaning, heritage, generational thinking.",
+      "core_tension": "Want art to mean something beyond decoration — a statement about who they are"
+    },
+    {
+      "id": "corporate",
+      "name": "Corporate clients",
+      "description": "Using art as a strategic tool — not decoration, consciousness.",
+      "core_tension": "Need to demonstrate cultural intelligence, not just wealth"
+    }
+  ],
+
+  "utp": [
+    {
+      "pillar": "Access",
+      "description": "Top tier of the art world is 1–2 phone calls away: major gallerists, museum directors, collectors, artists. Direct working relationships with institutions: Hermitage, Pushkin, Garage, GES-2. Emerging artists also in the interest zone."
+    },
+    {
+      "pillar": "Independence",
+      "description": "Can say 'I don't believe in artist X' when the whole market worships them. Free from gallery/auction house obligations. No kickbacks, no 'promoted' artists. Independence = honest quality judgment."
+    },
+    {
+      "pillar": "Navigation without snobbism",
+      "description": "Simple, bright language. Code decryption. Taste formation without pressure and hierarchies. Treats the person who doesn't understand as someone who was never honestly explained to — not as inferior."
+    }
+  ],
+
+  "values": [
+    { "name": "Clarity",      "description": "Making the complex understandable without simplification" },
+    { "name": "Dignity",      "description": "Respect for the person who doesn't understand — because nobody explained honestly" },
+    { "name": "Honesty",      "description": "Intellectual honesty: 'there's no single answer,' 'it's normal not to understand'" },
+    { "name": "Depth",        "description": "Knows more than she says. Keeper of meanings, not showoff of knowledge" },
+    { "name": "Independence", "description": "Not tied to galleries, doesn't promote 'own' artists for financial gain" }
+  ],
+
+  "anti_positioning": [
+    "Queen/Diva of the art world",
+    "Academic snob",
+    "Institutional curator",
+    "Info-blogger hyping trends",
+    "Gallery dealer with financial interest",
+    "Decorator matching paintings to sofas"
+  ],
+
+  "voice": {
+    "tone": [
+      "Confident but not arrogant — speaks from deep knowledge without showmanship",
+      "Warm but not soft — genuine care without being sycophantic",
+      "Direct but not blunt — honest assessments delivered with dignity",
+      "Cultured but not elitist — references high culture naturally, never to intimidate",
+      "Playful but not frivolous — humor and lightness as tools of accessibility"
+    ],
+    "simple_language_principle": "Sara explains complex art concepts the way a brilliant friend would over wine — not the way a professor would in a lecture. Technical terms are used when needed but always decoded immediately.",
+    "channel_register": [
+      { "channel": "Personal consultation", "register": "Warm, intimate, exploratory" },
+      { "channel": "Instagram / Telegram",  "register": "Sharp, provocative, visually-led" },
+      { "channel": "Magazine / editorial",  "register": "Deep, authoritative, culturally rich" },
+      { "channel": "Public speaking",       "register": "Charismatic, storytelling-driven" },
+      { "channel": "Website copy",          "register": "Clean, confident, inviting" }
+    ],
+    "vocabulary_use": [
+      "Ясность (clarity)",
+      "Проводник (guide)",
+      "Расшифровка (decryption/decoding)",
+      "Контекст (context)",
+      "Вкус (taste)",
+      "Навигация (navigation)",
+      "Осознанный выбор (conscious choice)",
+      "Без страха (without fear)",
+      "Честно (honestly)",
+      "Свобода (freedom)"
+    ],
+    "vocabulary_avoid": [
+      "Элитарный (elitist)",
+      "Эксклюзивный (exclusive) — in gatekeeping sense",
+      "Инвестиция (investment) — as primary frame",
+      "Обучение (teaching/training) — implies hierarchy",
+      "Должны (you should/must) — prescriptive tone",
+      "Тренд (trend) — Sara is beyond trends",
+      "Модный (fashionable) — cheapens the depth"
+    ],
+    "reframes": [
+      { "instead": "You need to understand...",    "say": "Here's what's interesting about..." },
+      { "instead": "This is an important artist",  "say": "Here's why this work resonates now" },
+      { "instead": "Investment potential",          "say": "How this work holds and creates value" },
+      { "instead": "Exclusive access",             "say": "Direct connection" },
+      { "instead": "Expert opinion",               "say": "My honest read" }
+    ]
+  },
+
+  "content_pillars": [
+    {
+      "id": "decoding",
+      "name": "Decoding (навигация)",
+      "description": "Teaching people to see and understand. Explaining art movements, individual works, market mechanics. Entry point for new audiences.",
+      "formats": ["Posts", "Short videos", "Explain Like I'm Smart But Not an Expert"]
+    },
+    {
+      "id": "inner_world",
+      "name": "Inner World (глубина)",
+      "description": "Personal reflections, studio visits, behind-the-scenes of the art world. Shows Sara's depth and access.",
+      "formats": ["Long-form", "Photo essays", "Video diaries"]
+    },
+    {
+      "id": "provocation",
+      "name": "Provocation (честность)",
+      "description": "Challenging art world conventions. 'Why I don't believe in artist X.' Market myths debunked. Anti-snobbism in action.",
+      "formats": ["Opinion pieces", "Live discussions", "Q&A"]
+    },
+    {
+      "id": "collection_stories",
+      "name": "Collection Stories (трансформация)",
+      "description": "How art changes lives. Client journeys (anonymized). Why this painting ended up in this home.",
+      "formats": ["Case studies", "Before/after narratives"]
+    }
+  ],
+
+  "manifest": "The art world has spent decades building walls and speaking in codes. Sara exists to decode without dumbing down. To open doors without removing the magic. To be honest in a market built on opacity. Not a rebel — a translator. Not against the system — above its games.",
+
+  "visual": {
+    "concept": "Тихая/громкая роскошь (Quiet/Loud Luxury). Mix of impeccable institutional design with folk cultural codes. Chanel + calico print. Diamonds + friendship bracelets.",
+    "rule_90_10": "90% institutional simplicity (white space, clean grid, breathing room). 10% ornamental incrustation — pixel ornaments, brand accents, cultural elements. The 10% is the differentiator.",
+    "colors": {
+      "lime":     "#DAEF5A",
+      "lavender": "#B98EC4",
+      "hotpink":  "#F0156B"
+    },
+    "typography": {
+      "body":     "Vela Sans — modern, elegant, good Cyrillic support",
+      "display":  "PP Writer — sharp contemporary letterforms, Latin only",
+      "fallback": "system-ui, sans-serif"
+    },
+    "cultural_dna": [
+      "Childhood in Azerbaijan — military family, natural hyper-generosity, exotic abundance",
+      "Teenage years in Moscow — Russian culture, institutional depth",
+      "Los Angeles period — American pop culture, kitsch, тленка (disposable glamour)",
+      "Paris / high European culture — refined, deep, exclusive",
+      "Jewish identity / Kabbalah — mysticism, depth beneath surface"
+    ],
+    "ornament_sources": [
+      "Russian folk ornament (simple geometric forms)",
+      "Jewish decorative tradition (17th–19th century amulets, menorahs, Star of David — white silhouette style)",
+      "Azerbaijani textile patterns",
+      "Contemporary pixel art / digital aesthetic"
+    ]
+  }
+}
