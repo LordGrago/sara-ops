@@ -83,13 +83,16 @@ All data lives in `/data/` as JSON files.
 ```json
 [{
   "id": "string",
+  "scroll_position": 1,
   "section_name": "string",
-  "purpose": "string",
+  "strategic_function": "string",
+  "emotional_job": "string",
   "audience": "entrepreneurs | families | corporate | all",
   "content_type": "hero | about | services | proof | contact | special",
   "status": "idea | sketched | designed | built | live",
   "figma_node": "string | null",
-  "notes": "string"
+  "notes": "string",
+  "variants": [{ "id": "A", "label": "string", "description": "string" }]
 }]
 ```
 

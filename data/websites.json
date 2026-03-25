@@ -1,1 +1,161 @@
-[]
+[
+  {
+    "id": "section-01-hero",
+    "scroll_position": 1,
+    "section_name": "Hero",
+    "strategic_function": "Provocation, not welcome. Filter the right visitor in 3 seconds.",
+    "emotional_job": "Stop. Lean in. Feel recognized.",
+    "audience": "all",
+    "content_type": "hero",
+    "status": "designed",
+    "figma_node": null,
+    "notes": "Opening statement BEFORE the name: «Красота — это форма сознания». Then: Sara Vinitz (PP Writer, large). Tagline: «Искусство без страха и снобизма». Full-bleed image/video with pixel overlay. No nav on load. No CTA — the scroll IS the CTA.",
+    "variants": [
+      { "id": "A", "label": "Statement First", "description": "Beauty is a form of consciousness dominates, Sara Vinitz name smaller below" },
+      { "id": "B", "label": "Name First", "description": "Large Sara Vinitz with statement as subtitle, image behind" },
+      { "id": "C", "label": "Split", "description": "Left: statement text on white. Right: image with pixel overlay. Name spans the divide" },
+      { "id": "D", "label": "Cinematic", "description": "Full video background (Sara walking through gallery), text overlaid minimally" }
+    ]
+  },
+  {
+    "id": "section-02-problem",
+    "scroll_position": 2,
+    "section_name": "The Problem Has a Name",
+    "strategic_function": "Name the market failure. Reframe the visitor's confusion as systemic, not personal.",
+    "emotional_job": "Relief. It's not my fault I'm lost.",
+    "audience": "all",
+    "content_type": "about",
+    "status": "designed",
+    "figma_node": null,
+    "notes": "Anchor: Beuys quote. Short editorial (3–5 sentences): too many artists, quality indistinguishable without trained eye. Sara's answer isn't curation-as-service — it's developing your own consciousness to navigate. Text-dominant, white background, PP Writer for quote, Vela Sans for body. Max-width 720px.",
+    "variants": [
+      { "id": "A", "label": "Quote-Led", "description": "Large Beuys quote, small explanatory paragraph below" },
+      { "id": "B", "label": "Editorial", "description": "Full paragraph with no pull-quote — reads like a magazine opening" },
+      { "id": "C", "label": "Visual Counter", "description": "Split: left text, right artwork that embodies the problem (overwhelming density)" }
+    ]
+  },
+  {
+    "id": "section-03-portraits",
+    "scroll_position": 3,
+    "section_name": "Three Portraits",
+    "strategic_function": "Show the product by showing the client. Anonymous micro-narratives replace services.",
+    "emotional_job": "Recognition. That's me. Or: That could be me.",
+    "audience": "all",
+    "content_type": "proof",
+    "status": "designed",
+    "figma_node": null,
+    "notes": "Three anonymous vignettes: Entrepreneur (Basquiat confusion, language he didn't speak), Family (40 works, no story, three generations of impulse buying), Corporate (board approved budget, nobody approved the risk). Each: 3–4 sentences before + brief after. No names, no 'Sara helped.' Transformation implied. Three-column cards, brand accent colors per card.",
+    "variants": [
+      { "id": "A", "label": "Cards", "description": "Three distinct cards, clean edges, slight shadow or border" },
+      { "id": "B", "label": "Continuous", "description": "Single flowing text with visual breaks — more editorial, less UI" },
+      { "id": "C", "label": "Reveal", "description": "Each portrait starts with one line; click/scroll reveals full story" },
+      { "id": "D", "label": "Horizontal Scroll", "description": "Portraits as horizontally-scrolling panels (mobile-first thinking)" }
+    ]
+  },
+  {
+    "id": "section-04-five-layers",
+    "scroll_position": 4,
+    "section_name": "Sara in Five Layers",
+    "strategic_function": "Explain why Sara's judgment is trustworthy. Not a CV — a cultural DNA map.",
+    "emotional_job": "Fascination. How does someone become this?",
+    "audience": "all",
+    "content_type": "about",
+    "status": "designed",
+    "figma_node": null,
+    "notes": "Identity word: культуролог. Five layers: 1. Azerbaijan — almond trees, hyper-generosity. 2. Moscow — institutional depth, right circles. 3. Los Angeles — pop, kitsch, тленка. 4. Paris — refined, best of the best. 5. Jewish/Kabbalah — beauty as spiritual practice. Closing: these coexist, the synthesis IS the product. Vertical progression, alternating alignment, ornament from each culture as transition markers.",
+    "variants": [
+      { "id": "A", "label": "Vertical Scroll", "description": "Each layer revealed on scroll, full-width, with cultural pattern backgrounds" },
+      { "id": "B", "label": "Timeline", "description": "Left-aligned timeline with visual elements branching right" },
+      { "id": "C", "label": "Layered Overlay", "description": "Sections physically overlap slightly — like geological strata" },
+      { "id": "D", "label": "Interactive", "description": "Each layer expands on click/hover with more detail" }
+    ]
+  },
+  {
+    "id": "section-05-world",
+    "scroll_position": 5,
+    "section_name": "The World She Moves In",
+    "strategic_function": "Trust through ecosystem. Show what 1–2 phone calls looks like.",
+    "emotional_job": "Confidence. She's connected to everything that matters.",
+    "audience": "all",
+    "content_type": "proof",
+    "status": "designed",
+    "figma_node": null,
+    "notes": "Not a CV. A map of access: Sara Vinitz Foundation (2018), ~11 artist residencies (Kulik, AES+F, Recycle Group, Gutov, Kovylina, Misha Most, Kanis, Makhacheva, Korina, Kuzkin, Sokol), Museum partnerships (Hermitage, Pushkin, Garage, GES-2), Paris (SVF Lounge), Moscow Art Magazine, first in Russia to implement art futures and options. Institutional tone, network/constellation layout. Only verified credentials.",
+    "variants": [
+      { "id": "A", "label": "Constellation", "description": "Names/logos as nodes in a network diagram, Sara at center" },
+      { "id": "B", "label": "Gallery Wall", "description": "Names arranged like artworks on a gallery wall — varied sizes, curated placement" },
+      { "id": "C", "label": "Scrolling Ticker", "description": "Horizontal scroll of institutions/names — minimal, elegant" },
+      { "id": "D", "label": "Map", "description": "Geographic map showing Moscow, Paris, NY with connection lines" }
+    ]
+  },
+  {
+    "id": "section-06-live-translation",
+    "scroll_position": 6,
+    "section_name": "Live Translation",
+    "strategic_function": "Product demonstration. Make the abstract promise viscerally real.",
+    "emotional_job": "Delight. Oh — THAT'S what she does.",
+    "audience": "all",
+    "content_type": "services",
+    "status": "designed",
+    "figma_node": null,
+    "notes": "3–4 real artworks decoded in Sara's voice: one canonical, one contemporary (surprising angle), one controversial (shows independence). Each: artwork image + Sara's short sharp commentary. No jargon — like explaining to a smart friend over wine. This IS the service demonstrated. Large artwork reproductions, pixel overlay as lens. PP Writer for titles, Vela Sans for commentary.",
+    "variants": [
+      { "id": "A", "label": "Gallery View", "description": "Artworks displayed large with commentary as wall labels" },
+      { "id": "B", "label": "Side-by-Side", "description": "Artwork left (60%), Sara's voice right (40%) — conversational" },
+      { "id": "C", "label": "Carousel", "description": "Horizontal swipe through artworks with commentary panels" },
+      { "id": "D", "label": "Video", "description": "Sara speaking over artwork images — embedded video clips" }
+    ]
+  },
+  {
+    "id": "section-07-how-we-work",
+    "scroll_position": 7,
+    "section_name": "How We Work",
+    "strategic_function": "Process explanation. Access, Independence, Navigation as experienced, not listed.",
+    "emotional_job": "Clarity. I understand what working with her looks like.",
+    "audience": "all",
+    "content_type": "services",
+    "status": "designed",
+    "figma_node": null,
+    "notes": "Three pillars as process: Access (top tier 1–2 calls away), Independence (can say no on your behalf, zero conflicts of interest), Navigation (speaks your language, treats confusion as industry's failure not yours). No hierarchy, no packages, no pricing. Ends with invitation not CTA button. Three equal columns, brand accent colors, pixel ornaments as dividers.",
+    "variants": [
+      { "id": "A", "label": "Columns", "description": "Three clean columns, icon + heading + paragraph" },
+      { "id": "B", "label": "Accordion", "description": "Three expandable sections — compact default, detailed on click" },
+      { "id": "C", "label": "Narrative", "description": "Single flowing text weaving all three together — more editorial" }
+    ]
+  },
+  {
+    "id": "section-08-dispatches",
+    "scroll_position": 8,
+    "section_name": "Dispatches",
+    "strategic_function": "Living editorial layer. Proof that Sara is active, thinking, provocative.",
+    "emotional_job": "Curiosity. I want to read more. Trust through ongoing engagement.",
+    "audience": "all",
+    "content_type": "special",
+    "status": "sketched",
+    "figma_node": null,
+    "notes": "NOT called Blog or News. Name: Dispatches / Transmissions / Сигналы. Content: market takes, artist deep-dives, provocation posts, Moscow Art Magazine pulls. 3–4 recent items visible + archive link. Each: image + headline + first sentence. Color category markers: Hot Pink (provocation), Lavender (deep-dives), Lime (market reads). Grid/masonry, magazine feel.",
+    "variants": [
+      { "id": "A", "label": "Magazine Grid", "description": "2×2 asymmetric grid with one large feature + three smaller" },
+      { "id": "B", "label": "Horizontal Scroll", "description": "Cards scroll horizontally — Instagram-story-like rhythm" },
+      { "id": "C", "label": "Minimal List", "description": "Date + headline + category. No images. Very institutional." }
+    ]
+  },
+  {
+    "id": "section-09-entry",
+    "scroll_position": 9,
+    "section_name": "Entry",
+    "strategic_function": "Anti-snobbism made structural. The form serves the person, not the funnel.",
+    "emotional_job": "Safety. She already understands where I am.",
+    "audience": "all",
+    "content_type": "contact",
+    "status": "sketched",
+    "figma_node": null,
+    "notes": "NOT a standard contact form. Three entry points: 'I'm just starting' (entrepreneur pathway), 'I have a collection' (family pathway), 'It's for our organization' (corporate pathway). Each: 1 line of reassurance + simple form. Optional manifesto block before form: dark background, large PP Writer type, 'No gatekeepers. No hierarchy. Just people who care about beauty.' Dark section (first on site). Sara's signature or handwritten element.",
+    "variants": [
+      { "id": "A", "label": "Three Doors", "description": "Three distinct cards per pathway, each with own color accent, leading to different forms" },
+      { "id": "B", "label": "Single Form + Routing", "description": "One form with I'm... selector that routes the message" },
+      { "id": "C", "label": "Conversational", "description": "Chat-like interface with guided prompts" },
+      { "id": "D", "label": "Manifesto Only", "description": "Dark manifesto block with just an email address. Maximum mystique." }
+    ]
+  }
+]
