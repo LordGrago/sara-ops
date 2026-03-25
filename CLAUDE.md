@@ -62,8 +62,8 @@ A multi-module operational dashboard for managing Sara Vinitz's work: content, p
 | Greg | Strategist / developer | Architecture, brand, website build |
 | Sara | Owner / creative director | Approvals, content, creative direction |
 | Avigail | Team member | Content, briefs — scope TBD |
-| Sasha #1 | Team member | Content plan — scope TBD |
-| Sasha #2 | Team member | Content plan — scope TBD |
+| Sasha #1 | Director of photography / film editor | Shooting, footage editing, Reels cuts |
+| Sasha #2 | Archival director / producer | Archival research, film direction, production |
 | Motion designer | TBD | Visual elements, ornament animations |
 
 ## Working conventions
@@ -91,10 +91,11 @@ docs: CLAUDE.md or README update
 
 | Component | Status |
 |-----------|--------|
-| Shared layer (tokens, base CSS, data utils) | Built — needs modernization |
-| Dashboard (index.html) | Built — needs Web Component migration |
-| Knowledge layer | Restructured into docs/ |
-| All 8 modules | Not yet built |
+| Shared layer (tokens, base CSS, store, Web Components) | ✓ Built and modernized |
+| Dashboard (index.html) | ✓ Uses sara-stat + sara-card components |
+| Knowledge layer | ✓ Restructured into docs/ |
+| Data (projects, tasks, content) | ✓ Seeded with real data |
+| All 8 modules | Not yet built — start with brand-filter |
 
 *Last updated: 2026-03-25*
 *Maintained by: Greg*
