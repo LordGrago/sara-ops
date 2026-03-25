@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Brand Filter — Sara Ops</title>
+  <title>Projects — Sara Ops</title>
   <link rel="stylesheet" href="../../shared/styles/tokens.css">
   <link rel="stylesheet" href="../../shared/styles/base.css">
   <link rel="stylesheet" href="../../shared/styles/module.css">
@@ -23,7 +23,7 @@
       <svg class="nav-icon" viewBox="0 0 16 16" fill="none"><rect x="2" y="2" width="5" height="5" rx="1" fill="currentColor"/><rect x="9" y="2" width="5" height="5" rx="1" fill="currentColor" opacity=".5"/><rect x="2" y="9" width="5" height="5" rx="1" fill="currentColor" opacity=".5"/><rect x="9" y="9" width="5" height="5" rx="1" fill="currentColor" opacity=".5"/></svg>
       Dashboard
     </a>
-    <a class="nav-link active" href="index.html">
+    <a class="nav-link" href="../brand-filter/index.html">
       <svg class="nav-icon" viewBox="0 0 16 16" fill="none"><path d="M8 2L9.5 6.5H14L10.5 9L11.5 14L8 11.5L4.5 14L5.5 9L2 6.5H6.5L8 2Z" fill="currentColor" opacity=".7"/></svg>
       Brand filter
     </a>
@@ -31,7 +31,7 @@
 
   <div class="nav-section">
     <span class="nav-label">Planning</span>
-    <a class="nav-link" href="../projects/index.html">
+    <a class="nav-link active" href="index.html">
       <svg class="nav-icon" viewBox="0 0 16 16" fill="none"><rect x="2" y="2" width="12" height="3" rx="1" fill="currentColor" opacity=".7"/><rect x="2" y="7" width="9" height="2" rx="1" fill="currentColor" opacity=".5"/><rect x="2" y="11" width="6" height="2" rx="1" fill="currentColor" opacity=".3"/></svg>
       Projects
     </a>
@@ -68,34 +68,30 @@
 
 <main id="main">
   <div class="page-header">
-    <h1>Brand Filter</h1>
-    <p>Sara's postulates and voice principles. Paste any text to check its alignment.</p>
+    <h1>Projects</h1>
+    <p>All active and planned work across website, film, content, and strategy.</p>
   </div>
 
-  <div class="brand-split">
+  <div id="filter-bar" class="projects-filter-bar">
+    <!-- Rendered by app.js -->
+  </div>
 
-    <div class="postulates-wall" id="postulates">
-      <!-- Rendered by app.js -->
-      <div class="empty-state"><p>Loading brand data…</p></div>
-    </div>
-
-    <aside class="check-panel">
-      <div class="check-panel-inner">
-        <h2 class="check-panel-title">Content Check</h2>
-        <p class="check-panel-sub">Paste a post, caption, or article. Get an alignment verdict.</p>
-        <textarea
-          id="check-input"
-          class="check-textarea"
-          placeholder="Вставьте текст для проверки…"
-          rows="8"
-        ></textarea>
-        <button class="btn btn-primary check-btn" id="check-btn">Проверить</button>
-        <div id="check-results" class="check-results" hidden></div>
-      </div>
-    </aside>
-
+  <div id="projects-grid" class="projects-grid">
+    <!-- Rendered by app.js -->
+    <div class="empty-state"><p>Loading projects…</p></div>
   </div>
 </main>
+
+<!-- Detail drawer -->
+<div id="detail-overlay" class="detail-overlay" hidden></div>
+<aside id="detail-panel" class="detail-panel" hidden>
+  <div class="detail-panel-inner">
+    <button class="detail-close" id="detail-close" aria-label="Close">
+      <svg viewBox="0 0 16 16" fill="none" width="16" height="16"><path d="M3 3L13 13M13 3L3 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+    </button>
+    <div id="detail-content"><!-- Rendered by app.js --></div>
+  </div>
+</aside>
 
 <script type="module" src="app.js"></script>
 </body>
