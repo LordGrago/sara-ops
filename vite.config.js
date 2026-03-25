@@ -28,7 +28,8 @@ function moduleEntries() {
 
 export default defineConfig({
   root: __dirname,
-  publicDir: 'data',
+  // No custom publicDir — data/ is served as static files in dev (Vite serves
+  // the full root), and copied explicitly to dist/ in the deploy workflow.
   build: {
     outDir: 'dist',
     rollupOptions: {
