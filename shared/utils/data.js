@@ -1,11 +1,9 @@
 // shared/utils/data.js
-// Utilities for loading and querying JSON data files.
-// All modules import from here — never fetch() data directly.
+// Compatibility wrapper around the reactive store.
+// All modules may import from here — existing loadJSON()/filterBy() calls continue to work.
+// For reactive subscriptions, import store directly from './store.js'.
 
-const BASE = './data';
-
-// Cache to avoid redundant fetches within a session
-const _cache = {};
+import { store } from './store.js';
 
 /**
  * Loads a JSON file from /data/. Returns parsed array or object.
@@ -13,20 +11,15 @@ const _cache = {};
  * @returns {Promise<any>}
  */
 export async function loadJSON(name) {
-  if (_cache[name]) return _cache[name];
-  const res = await fetch(`${BASE}/${name}.json`);
-  if (!res.ok) throw new Error(`Failed to load ${name}.json: ${res.status}`);
-  const data = await res.json();
-  _cache[name] = data;
-  return data;
+  return store.load(name);
 }
 
 /**
- * Clears the cache for a given file (after a local edit).
+ * Clears the store cache and localStorage buffer for a dataset.
  * @param {string} name
  */
 export function clearCache(name) {
-  delete _cache[name];
+  store.clearPending(name);
 }
 
 /**
