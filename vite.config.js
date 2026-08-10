@@ -10,7 +10,7 @@ import { readdirSync, existsSync } from 'fs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
-/** Collects all module entry points from modules/*/index.html. */
+// Collects all module entry points from modules/*/index.html.
 function moduleEntries() {
   const modulesDir = resolve(__dirname, 'modules');
   if (!existsSync(modulesDir)) return {};
