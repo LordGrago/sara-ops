@@ -8,9 +8,8 @@
   <link rel="stylesheet" href="shared/styles/base.css">
   <style>
     /* Sidebar */
-    #sidebar {
-      padding: var(--space-6) 0;
-    }
+    #sidebar { padding: var(--space-6) 0; }
+
     .sidebar-logo {
       padding: 0 var(--space-5) var(--space-6);
       border-bottom: 1px solid var(--color-border);
@@ -32,10 +31,7 @@
     }
 
     /* Nav sections */
-    .nav-section {
-      padding: 0 var(--space-3);
-      margin-bottom: var(--space-4);
-    }
+    .nav-section { padding: 0 var(--space-3); margin-bottom: var(--space-4); }
     .nav-label {
       font-size: var(--text-xs);
       color: var(--color-text-hint);
@@ -48,87 +44,32 @@
       display: flex;
       align-items: center;
       gap: var(--space-2);
-      padding: var(--space-2) var(--space-2);
+      padding: var(--space-2);
       border-radius: var(--radius-md);
       font-size: var(--text-sm);
       color: var(--color-text-muted);
       text-decoration: none;
       transition: all var(--transition-fast);
     }
-    .nav-link:hover,
-    .nav-link.active {
+    .nav-link:hover, .nav-link.active {
       background: var(--color-bg-muted);
       color: var(--color-text);
     }
-    .nav-icon {
-      width: 16px;
-      height: 16px;
-      flex-shrink: 0;
-      opacity: 0.6;
+    .nav-icon { width: 16px; height: 16px; flex-shrink: 0; opacity: 0.6; }
+
+    /* Stats row */
+    .stats-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: var(--space-4);
+      margin-bottom: var(--space-8);
     }
 
-    /* Dashboard grid */
+    /* Module grid */
     .module-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
       gap: var(--space-4);
-      margin-top: var(--space-8);
-    }
-    .module-card {
-      background: var(--color-bg);
-      border: 1px solid var(--color-border);
-      border-radius: var(--radius-md);
-      padding: var(--space-5);
-      text-decoration: none;
-      color: inherit;
-      display: block;
-      transition: border-color var(--transition-fast), transform var(--transition-fast);
-    }
-    .module-card:hover {
-      border-color: var(--color-border-dark);
-      transform: translateY(-1px);
-    }
-    .module-card-accent {
-      width: 28px;
-      height: 3px;
-      border-radius: 2px;
-      margin-bottom: var(--space-4);
-    }
-    .module-card h3 {
-      font-size: var(--text-base);
-      font-weight: 500;
-      margin-bottom: var(--space-1);
-    }
-    .module-card p {
-      font-size: var(--text-sm);
-      line-height: var(--leading-normal);
-    }
-
-    /* Stats row */
-    .stats-row {
-      display: flex;
-      gap: var(--space-4);
-      flex-wrap: wrap;
-      margin-bottom: var(--space-8);
-    }
-    .stat {
-      background: var(--color-bg);
-      border: 1px solid var(--color-border);
-      border-radius: var(--radius-md);
-      padding: var(--space-4) var(--space-5);
-      min-width: 140px;
-    }
-    .stat-value {
-      font-size: var(--text-2xl);
-      font-weight: 300;
-      line-height: 1;
-      margin-bottom: var(--space-1);
-    }
-    .stat-label {
-      font-size: var(--text-xs);
-      color: var(--color-text-hint);
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
     }
   </style>
 </head>
@@ -195,108 +136,104 @@
     <p>All directions of Sara's work in one place.</p>
   </div>
 
-  <div class="stats-row" id="stats-row">
-    <div class="stat">
-      <div class="stat-value" id="stat-projects">—</div>
-      <div class="stat-label">Active projects</div>
-    </div>
-    <div class="stat">
-      <div class="stat-value" id="stat-tasks">—</div>
-      <div class="stat-label">Open tasks</div>
-    </div>
-    <div class="stat">
-      <div class="stat-value" id="stat-content">—</div>
-      <div class="stat-label">Content this week</div>
-    </div>
-    <div class="stat">
-      <div class="stat-value" id="stat-blocked">—</div>
-      <div class="stat-label">Blocked</div>
-    </div>
+  <div class="stats-row">
+    <sara-stat id="stat-projects" label="Active projects" accent="var(--color-lime)"></sara-stat>
+    <sara-stat id="stat-tasks"    label="Open tasks"      accent="var(--color-lavender)"></sara-stat>
+    <sara-stat id="stat-content"  label="Content this week" accent="var(--lime-700)"></sara-stat>
+    <sara-stat id="stat-blocked"  label="Blocked"         accent="var(--color-hotpink)"></sara-stat>
   </div>
 
   <div class="module-grid">
+    <sara-card
+      heading="Brand filter"
+      description="Sara's postulates. Paste any text to check it against brand values and voice principles."
+      accent="var(--color-lime)"
+      href="modules/brand-filter/index.html">
+    </sara-card>
 
-    <a class="module-card" href="modules/brand-filter/index.html">
-      <div class="module-card-accent" style="background: var(--color-lime)"></div>
-      <h3>Brand filter</h3>
-      <p>Sara's postulates. Paste any text to check it against brand values and voice principles.</p>
-    </a>
+    <sara-card
+      heading="Projects"
+      description="All active directions: website, films, art projects, content, strategy. Phases and statuses."
+      accent="var(--color-lavender)"
+      href="modules/projects/index.html">
+    </sara-card>
 
-    <a class="module-card" href="modules/projects/index.html">
-      <div class="module-card-accent" style="background: var(--color-lavender)"></div>
-      <h3>Projects</h3>
-      <p>All active directions: website, films, art projects, content, strategy. Phases and statuses.</p>
-    </a>
+    <sara-card
+      heading="Task map"
+      description="Every task with its owner. Kanban + table view. Blocked items surface automatically."
+      accent="var(--color-hotpink)"
+      href="modules/task-map/index.html">
+    </sara-card>
 
-    <a class="module-card" href="modules/task-map/index.html">
-      <div class="module-card-accent" style="background: var(--color-hotpink)"></div>
-      <h3>Task map</h3>
-      <p>Every task with its owner. Kanban + table view. Blocked items surface automatically.</p>
-    </a>
+    <sara-card
+      heading="Content plan"
+      description="Calendar of posts, reels, Telegram articles. Assignees, pillars, approval queue for Sara."
+      accent="var(--lime-700)"
+      href="modules/content-plan/index.html">
+    </sara-card>
 
-    <a class="module-card" href="modules/content-plan/index.html">
-      <div class="module-card-accent" style="background: var(--lime-700)"></div>
-      <h3>Content plan</h3>
-      <p>Calendar of posts, reels, Telegram articles. Assignees, pillars, approval queue for Sara.</p>
-    </a>
+    <sara-card
+      heading="Film projects"
+      description="Documentary interview pipeline: shoot → edit → social cuts → publish."
+      accent="var(--neutral-400)"
+      href="modules/film-projects/index.html">
+    </sara-card>
 
-    <a class="module-card" href="modules/film-projects/index.html">
-      <div class="module-card-accent" style="background: var(--neutral-400)"></div>
-      <h3>Film projects</h3>
-      <p>Documentary interview pipeline: shoot → edit → social cuts → publish.</p>
-    </a>
+    <sara-card
+      heading="Website builder"
+      description="Section cards for Sara's public site. Build architecture before implementing."
+      accent="var(--lavender-700)"
+      href="modules/website-builder/index.html">
+    </sara-card>
 
-    <a class="module-card" href="modules/website-builder/index.html">
-      <div class="module-card-accent" style="background: var(--lavender-700)"></div>
-      <h3>Website builder</h3>
-      <p>Section cards for Sara's public site. Build architecture before implementing.</p>
-    </a>
+    <sara-card
+      heading="Gallery 3D"
+      description="Isometric editor for virtual gallery spaces. Draw → render → embed on the website."
+      accent="var(--hotpink-300)"
+      href="modules/gallery-3d/index.html">
+    </sara-card>
 
-    <a class="module-card" href="modules/gallery-3d/index.html">
-      <div class="module-card-accent" style="background: var(--hotpink-300)"></div>
-      <h3>Gallery 3D</h3>
-      <p>Isometric editor for virtual gallery spaces. Draw → render → embed on the website.</p>
-    </a>
-
-    <a class="module-card" href="modules/art-projects/index.html">
-      <div class="module-card-accent" style="background: var(--lime-500)"></div>
-      <h3>Art projects</h3>
-      <p>Standalone art projects: pop-up galleries, tapestries, carpets, digital library.</p>
-    </a>
-
+    <sara-card
+      heading="Art projects"
+      description="Standalone art projects: pop-up galleries, tapestries, carpets, digital library."
+      accent="var(--color-lime)"
+      href="modules/art-projects/index.html">
+    </sara-card>
   </div>
 </main>
 
 <script type="module">
-  import { loadJSON, filterBy } from './shared/utils/data.js';
+  import { store } from './shared/utils/store.js';
+  import './shared/components/sara-stat.js';
+  import './shared/components/sara-card.js';
 
+  // Loads stats and populates sara-stat components reactively
   async function loadStats() {
     try {
       const [projects, tasks, content] = await Promise.all([
-        loadJSON('projects'),
-        loadJSON('tasks'),
-        loadJSON('content')
+        store.load('projects'),
+        store.load('tasks'),
+        store.load('content'),
       ]);
 
-      const activeProjects = filterBy(projects, { status: 'active' }).length;
-      const openTasks      = tasks.filter(t => t.status !== 'done').length;
-      const blockedTasks   = filterBy(tasks, { status: 'blocked' }).length;
+      const active  = projects.filter(p => p.status === 'active').length;
+      const open    = tasks.filter(t => t.status !== 'done').length;
+      const blocked = tasks.filter(t => t.status === 'blocked').length;
 
-      // Content this week
       const now  = new Date();
       const wEnd = new Date(now); wEnd.setDate(now.getDate() + 7);
-      const contentWeek = content.filter(c => {
+      const week = content.filter(c => {
         if (!c.publish_date) return false;
         const d = new Date(c.publish_date);
         return d >= now && d <= wEnd;
       }).length;
 
-      document.getElementById('stat-projects').textContent = activeProjects || '0';
-      document.getElementById('stat-tasks').textContent    = openTasks     || '0';
-      document.getElementById('stat-content').textContent  = contentWeek   || '0';
-      document.getElementById('stat-blocked').textContent  = blockedTasks  || '0';
-    } catch (e) {
-      // Data files empty or missing — silently show dashes
+      document.getElementById('stat-projects').setAttribute('value', active);
+      document.getElementById('stat-tasks').setAttribute('value', open);
+      document.getElementById('stat-content').setAttribute('value', week);
+      document.getElementById('stat-blocked').setAttribute('value', blocked);
+    } catch (_) {
+      // Data not yet populated — stats stay at default —
     }
   }
 

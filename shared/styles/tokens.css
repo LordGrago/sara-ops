@@ -2,6 +2,9 @@
    Single source of truth for all visual values.
    Never hardcode colors or spacing anywhere else. */
 
+/* Layer order declaration — controls cascade priority */
+@layer reset, base, tokens, components, modules, utilities;
+
 :root {
   /* Brand accents */
   --color-lime:     #DAEF5A;
